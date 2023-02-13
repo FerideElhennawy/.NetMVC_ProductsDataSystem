@@ -1,0 +1,42 @@
+﻿@using FullStackAssignment.Models;
+@{
+    ViewBag.Title = "AddProduct";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Add a New Product</h2>
+                <form action="/Products/AddProduct" method="post" role="form">
+                    <div class="form-body">
+
+                        <label>Product Name </label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter product name..." name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <label>Description </label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter product description..." name="description">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-dark">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
